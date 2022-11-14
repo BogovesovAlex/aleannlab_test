@@ -1,0 +1,15 @@
+.container_attacged_img {
+  margin-top: 87px;
+  padding-bottom: 90px;
+}
+
+.container_attacged_img div:first-child {
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 210px;
+  height: 115px;
+  border-radius: 8px;
+  margin-right: 10px;
+}

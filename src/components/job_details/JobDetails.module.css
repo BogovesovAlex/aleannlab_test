@@ -1,0 +1,76 @@
+.nav_save_list {
+  display: flex;
+  gap: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.5625px;
+  color: #3A4562;
+}
+
+.nav_save_list div {
+  display: flex;
+  align-items: center;
+}
+
+.nav_save_list span {
+  margin-left: 16px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  gap: 7px;
+}
+
+.title h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  max-width: 500px;
+}
+
+.title .salary {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.625px;
+}
+
+.date_in_title {
+  flex-basis: 100%;
+  color: rgba(56, 65, 93, 0.355988); 
+}
+
+.description {
+  color: #3A4562;
+  margin-bottom: 40px;
+}
+
+.description ul {
+  list-style:none;
+  margin:0;
+  padding: 0;
+}
+
+.description ul li {
+  position: relative;
+}
+
+.description ul li:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height:9px;
+  width: 9px;
+  background: rgba(56, 69, 100, 0.632594);
+  left: -20px;
+  top: 6px;
+}

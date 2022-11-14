@@ -1,0 +1,56 @@
+.container_info {
+  margin-top: 85px;
+}
+
+.container_info div:first-child {
+  margin-bottom: 15px;
+}
+
+.container_info h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.5625px;
+  color: #3A4562;
+}
+
+.container_info ul {
+  list-style: none;
+  display: flex;
+}
+
+.container_info li {
+  font-family: 'Proxima Nova', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.457143px;
+  padding: 16px 0;
+  width: 220px;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.employment li {
+  color: #55699E;
+  background: rgba(161, 177, 219, 0.317343);
+  border: 1px solid rgba(85, 105, 158, 0.3);
+  border-radius: 8px;
+}
+
+.benefit {
+  margin-top: 23px;
+}
+
+.benefit li {
+  color: #988B49;
+  background: rgba(255, 207, 0, 0.15);
+  border: 1px solid #FFCF00;
+  border-radius: 8px;
+}
+
+
+
+

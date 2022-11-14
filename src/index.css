@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("./fonts/ProximaNova-Regular.woff"),
+  url("./fonts/ProximaNova-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("./fonts/ProximaNovaT-Thin.woff"),
+  url("./fonts/ProximaNovaT-Thin.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("./fonts/ProximaNova-Bold.woff"),
+  url("./fonts/ProximaNova-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/Roboto-Light.woff"),
+  url("./fonts/Roboto-Light.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/Roboto-Regular.woff"),
+  url("./fonts/Roboto-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/Roboto-Bold.woff"),
+  url("./fonts/Roboto-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  background: #F5F5F5;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.centered {
+  margin: 3rem auto;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focused {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3A4562;
+}
+
+.map-container{
+  height: 400px;
+  width: 400px;
+  background: black;
+}
+
+.pagination .css-wjh20t-MuiPagination-ul {
+  background: #FFFFFF;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 10.4px;
+}
+
+.pagination .css-wjh20t-MuiPagination-ul li:first-child {
+  padding: 0;
+  border-right: 1.3px solid #DEE3EF;
+  padding-right: 30px;
+  margin-right: 50px;
+}
+
+.pagination .css-wjh20t-MuiPagination-ul li:first-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  padding: 0;
+  margin-left: 15px;
+}
+
+.pagination .css-wjh20t-MuiPagination-ul li:last-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  padding: 0;
+  margin-right: 15px;
+}
+
+
+.pagination .css-wjh20t-MuiPagination-ul li:last-child {
+  padding: 0;
+  border-left: 1.3px solid #DEE3EF;
+  padding-left: 30px;
+  margin-left: 50px;
+}
+
+.pagination .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 20.8px;
+  line-height: 25px;
+  letter-spacing: 1.73333px;
+  color: #70778B;
+  padding: 25px 15px;
+  margin: 0 8px;
+}
+
+.pagination .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: transparent;
+  border-radius: 0px;
+  border-bottom: 2.6px solid #5876C5;
+  color: #5876c5;
+}
+
+.pagination .css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon {
+  font-size: 2rem;
+}
+
+.container-detail-job {
+    display: flex;
+    width: 100%;
+    padding: 56px 70px 160px 70px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    color: #3A4562;
+}
+
+@media screen and (max-width: 414px) {
+  .pagination svg {
+    display: none;
+  }
+
+  .pagination .css-wjh20t-MuiPagination-ul li:first-child {
+    margin-right: 42px;
+    padding-right: 20px;
+  }
+
+  .pagination .css-wjh20t-MuiPagination-ul li:last-child {
+    margin-left: 42px;
+    padding-left: 20px;
+  }
+
+  .pagination .css-wjh20t-MuiPagination-ul li:first-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+    margin-left: 0;
+  }
+
+  .pagination .css-wjh20t-MuiPagination-ul li:last-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+    margin-right: 0;
+  }
+
+  .pagination .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.33333px;
+    padding: 20px 12px;
+    margin: 0 6px;
+  }
+}
+
+@media (hover: none) {
+  .css-wjh20t-MuiPagination-ul .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover {
+    background-color: transparent;
+  }
+}
+
+
+
+
