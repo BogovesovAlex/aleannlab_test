@@ -87,38 +87,38 @@ ul {
   border-radius: 0 0 8px 8px;
 }
 
-.pagination .css-wjh20t-MuiPagination-ul {
+.pagination ul {
   background: #FFFFFF;
   box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 10.4px;
 }
 
-.pagination .css-wjh20t-MuiPagination-ul li:first-child {
+.pagination ul li:first-child {
   padding: 0;
   border-right: 1.3px solid #DEE3EF;
   padding-right: 30px;
   margin-right: 50px;
 }
 
-.pagination .css-wjh20t-MuiPagination-ul li:first-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+.pagination ul li:first-child a {
   padding: 0;
   margin-left: 15px;
 }
 
-.pagination .css-wjh20t-MuiPagination-ul li:last-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+.pagination ul li:last-child a {
   padding: 0;
   margin-right: 15px;
 }
 
 
-.pagination .css-wjh20t-MuiPagination-ul li:last-child {
+.pagination ul li:last-child {
   padding: 0;
   border-left: 1.3px solid #DEE3EF;
   padding-left: 30px;
   margin-left: 50px;
 }
 
-.pagination .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+.pagination a {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 700;
   font-size: 20.8px;
@@ -154,21 +154,21 @@ ul {
     display: none;
   }
 
-  .pagination .css-wjh20t-MuiPagination-ul li:first-child {
+  .pagination ul li:first-child {
     margin-right: 42px;
     padding-right: 20px;
   }
 
-  .pagination .css-wjh20t-MuiPagination-ul li:last-child {
+  .pagination ul li:last-child {
     margin-left: 42px;
     padding-left: 20px;
   }
 
-  .pagination .css-wjh20t-MuiPagination-ul li:first-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  .pagination ul li:first-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
     margin-left: 0;
   }
 
-  .pagination .css-wjh20t-MuiPagination-ul li:last-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  .pagination ul li:last-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
     margin-right: 0;
   }
 
