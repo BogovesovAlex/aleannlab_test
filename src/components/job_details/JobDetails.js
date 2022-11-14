@@ -1,13 +1,13 @@
 import { Fragment } from 'react';
 import { getModifiedDate } from '../../helpers';
 
+import classes from './JobDetails.module.css';
+
 import TitleCard from '../../UI/TitleCard';
+import Button from "../../UI/Button";
 
 import { ReactComponent as Flag } from '../../icons/Rectangle_31.svg';
 import { ReactComponent as Shape } from '../../icons/Shape.svg';
-import Button from "../../UI/Button";
-
-import classes from './JobDetails.module.css';
 
 const JobDetails = (props) => {
 

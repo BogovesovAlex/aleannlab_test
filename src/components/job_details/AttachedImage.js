@@ -11,7 +11,7 @@ const AdditionalInfo = (props) => {
       </TitleCard>
       <div className={classes.image}>
         {props.images.map((image) => (
-          <img alt='' src={image} key={Math.random()}/>
+          <img alt='' src={image} key={Math.random()} />
         ))}
       </div>
     </section>

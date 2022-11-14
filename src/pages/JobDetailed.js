@@ -3,11 +3,12 @@ import { useParams } from "react-router-dom";
 
 import { useLoadScript } from '@react-google-maps/api';
 
-import JobDetailsContainer from "../components/job_details/JobDetailsContainer";
-import LoadingSpinner from "../UI/LoadingSpinner";
 import useHttp from '../hooks/use-http';
-import NoJobsFound from "../components/NoJobsFound";
 import { getDataJobs } from "../lib/api";
+
+import JobDetailsContainer from "../components/job_details/JobDetailsContainer";
+import NoJobsFound from "../components/NoJobsFound";
+import LoadingSpinner from "../UI/LoadingSpinner";
 
 const API_KEY = process.env.React_App_GOOGLE_MAPS_API_KEY;
 

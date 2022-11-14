@@ -15,6 +15,7 @@ Geocode.setApiKey(API_KEY);
 
 const JobItem = (props) => {
   const [adress, setAdress] = useState();
+  
   const date = getModifiedDate(props.date);
 
   Geocode.fromLatLng(props.location.lat, props.location.long).then(
@@ -46,7 +47,7 @@ const JobItem = (props) => {
       </div>
       <div className={classes.rating_date}>
         <div className={classes.rating}>
-         {[...Array(props.rating)].map(() => <Start key={Math.random()} /> ) }
+          {[...Array(props.rating)].map(() => <Start key={Math.random()} />)}
         </div>
         <div className={classes.date_in_item}>
           <Flag />

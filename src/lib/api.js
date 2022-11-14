@@ -15,9 +15,9 @@ export async function getDataJobs(jobsId) {
     throw new Error(data.message || 'Could not fetch jobs.');
   }
 
-  const addNumberStarts = data.map(item => Object.assign(item, { rating: Math.floor(Math.random() * 5) + 1 }));
+  const addNumberStars = data.map(item => Object.assign(item, { rating: Math.floor(Math.random() * 5) + 1 }));
 
-  const sortedJobs = addNumberStarts.sort((job1, job2) => Date.parse(job2.updatedAt) - Date.parse(job1.updatedAt));
+  const sortedJobs = addNumberStars.sort((job1, job2) => Date.parse(job2.updatedAt) - Date.parse(job1.updatedAt));
 
   if (jobsId) {
     const loadedJob = sortedJobs.filter(job => job.id === jobsId);

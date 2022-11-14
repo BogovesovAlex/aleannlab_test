@@ -3,11 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 import AdditionalInfo from './AdditionalInfo';
 import JobDetails from './JobDetails';
 import AttachedImage from './AttachedImage';
+import classes from './JobDetailsContainer.module.css';
+import TitleCard from '../../UI/TitleCard';
+
 import { ReactComponent as Marker } from '../../icons/Location.svg';
 
-import classes from './JobDetailsContainer.module.css';
 import Map from '../map/Map';
-import TitleCard from '../../UI/TitleCard';
 
 const JobDetailsContainer = (props) => {
   const location = useLocation();

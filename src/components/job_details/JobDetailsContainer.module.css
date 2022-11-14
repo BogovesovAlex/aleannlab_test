@@ -100,6 +100,7 @@
 @media screen and (max-width: 414px) {
   .in_container_job {
     font-family: 'Proxima Nova'; 
+    
   }
 
   .in_container_job>button {
@@ -131,6 +132,10 @@
     line-height: 34px;
     letter-spacing: 0.413333px;
     color: #3A4562;
+  }
+
+  .contacts {
+    margin: 0 auto;
   }
 
   .contacts div p:first-child {

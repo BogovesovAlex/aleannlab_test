@@ -3,8 +3,6 @@ import JobBoard from './pages/JobBoard';
 import JobDetailed from './pages/JobDetailed';
 import Layout from './components/Layout/Layout';
 
-import './App.css';
-
 function App() {
   return (
     <Layout>
