@@ -4,8 +4,6 @@ import classes from './AttachedImage.module.css';
 
 const AdditionalInfo = (props) => {
 
-  console.log(props.images)
-
   return (
     <section className={classes.container_attacged_img}>
       <TitleCard >

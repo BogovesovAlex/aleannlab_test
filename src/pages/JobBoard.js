@@ -54,7 +54,7 @@ const JobBoard = (props) => {
   if (status === 'completed' && (!loadedJobs || loadedJobs.length === 0)) {
     return <NoJobsFound />;
   }
-console.log(jobs)
+
   return (
     <Fragment>
       <JobList jobs={jobs} page={page} />
