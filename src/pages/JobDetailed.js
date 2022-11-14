@@ -1,11 +1,9 @@
 import { useEffect } from "react";
-import { useLocation, useParams } from "react-router-dom";
-import Geocode from "react-geocode";
+import { useParams } from "react-router-dom";
 
 import { useLoadScript } from '@react-google-maps/api';
 
 import JobDetailsContainer from "../components/job_details/JobDetailsContainer";
-import Map from "../components/map/Map";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import useHttp from '../hooks/use-http';
 import NoJobsFound from "../components/NoJobsFound";
@@ -43,25 +41,7 @@ const JobDetailed = () => {
 
   if (!isLoaded) return <NoJobsFound />;
 
-  Geocode.setApiKey(API_KEY);
-  
-  Geocode.fromLatLng(loadedJob.location.lat, loadedJob.location.long).then(
-    (response) => {
-      const address = response.results[0].formatted_address;
-      console.log(address);
-    },
-    (error) => {
-      console.error(error);
-    }
-  );
-
-  return (
-    <section className="container-detail-job">
-      <JobDetailsContainer dataJob={loadedJob}/>
-      <Map centerPoint={loadedJob.location}/>
-    </section>
-
-  );
+  return (<JobDetailsContainer dataJob={loadedJob} />);
 };
 
 export default JobDetailed;

@@ -82,9 +82,9 @@ ul {
 }
 
 .map-container{
-  height: 400px;
-  width: 400px;
+  height: 218px;
   background: black;
+  border-radius: 0 0 8px 8px;
 }
 
 .pagination .css-wjh20t-MuiPagination-ul {
@@ -179,6 +179,11 @@ ul {
     padding: 20px 12px;
     margin: 0 6px;
   }
+
+  .container-detail-job {
+    flex-direction: column;
+    padding: 24px 15px 35px 15px;  
+}
 }
 
 @media (hover: none) {

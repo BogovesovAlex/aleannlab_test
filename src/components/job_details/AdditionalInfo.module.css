@@ -51,6 +51,9 @@
   border-radius: 8px;
 }
 
-
-
-
+@media screen and (max-width: 414px) {
+  .container_info {
+    margin-top: 55px;
+    order:2;
+  }
+}

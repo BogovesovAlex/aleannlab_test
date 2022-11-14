@@ -20,3 +20,10 @@
 .button:active { 
   background: #384564;
 }
+
+@media screen and (max-width: 414px) {
+  .button {
+    display: block;
+    margin: 0 auto;
+  }
+}

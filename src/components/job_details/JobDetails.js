@@ -51,8 +51,8 @@ const JobDetails = (props) => {
           <li>Medical, Dental, and Vision Insurance</li>
           <li>Occurrence-based Malpractice Coverage</li>
         </ul>
+        <Button>Apply now</Button>
       </section>
-      <Button>Apply now</Button>
     </Fragment>
   );
 }

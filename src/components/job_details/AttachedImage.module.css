@@ -13,3 +13,10 @@
   border-radius: 8px;
   margin-right: 10px;
 }
+
+@media screen and (max-width: 414px) {
+  .container_attacged_img {
+    margin-top: 135px;
+    padding-bottom: 0;
+  }
+}

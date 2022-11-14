@@ -39,8 +39,6 @@ const JobBoard = (props) => {
     }
   }, [page, loadedJobs]);
 
-
-
   if (status === 'pending') {
     return (
       <div className='centered'>

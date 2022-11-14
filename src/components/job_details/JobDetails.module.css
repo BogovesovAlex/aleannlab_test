@@ -51,13 +51,13 @@
 
 .description {
   color: #3A4562;
-  margin-bottom: 40px;
 }
 
 .description ul {
   list-style:none;
   margin:0;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 .description ul li {
@@ -73,4 +73,53 @@
   background: rgba(56, 69, 100, 0.632594);
   left: -20px;
   top: 6px;
+}
+
+@media screen and (max-width: 414px) {
+  .nav_save_list {
+    position: absolute;
+    bottom: -45px;
+  }
+
+  .date_in_title {
+    flex-basis: auto;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.191905px;
+    color: rgba(56, 65, 93, 0.602109);
+  }
+
+  .title div {
+    order: 1;
+  }
+
+  .salary {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.625px;
+    color: #3A4562;
+  }
+
+  .title .description {
+    margin-top: 10px;
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .description ul {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .description ul li {
+    margin-left: 25px;
+  }
+
+  .description ul li:before {
+    left: -24px;
+  }
 }

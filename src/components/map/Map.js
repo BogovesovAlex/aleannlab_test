@@ -4,17 +4,17 @@ import { useMemo } from "react";
 import { defaultTheme } from './Theme';
 
 const defaultOptions = {
-  panControl: true,
-  zoomControl: true,
+  panControl: false,
+  zoomControl: false,
   mapTypeControl: false,
   scaleControl: false,
   streetViewControl: false,
   rotateControl: false,
   clickableIcons: false,
   keyboardShortcuts: false,
-  scrollwhell: false,
+  scrollwheel: false,
   disableDoubleClickZoom: false,
-  fullscreenControll: false,
+  fullscreenControl: false,
   styles: defaultTheme,
 }
 
@@ -28,7 +28,7 @@ function Map({ centerPoint }) {
       mapContainerClassName="map-container"
       options={defaultOptions}
     >
-      <Marker position={center} />
+      <Marker position={center} icon={{ url: '/LocationMap.svg' }} />
     </GoogleMap>
   );
 }

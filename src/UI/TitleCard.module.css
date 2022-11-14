@@ -14,3 +14,10 @@
   line-height: 34px;
   letter-spacing: 0.413333px;
 }
+
+@media screen and (max-width: 414px) {
+  .header_details {
+    position: relative;
+    margin-bottom: 80px;
+  }
+}
