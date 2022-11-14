@@ -92,6 +92,16 @@
     color: rgba(56, 65, 93, 0.602109);
   }
 
+  .nav_save_list span {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: rgba(56, 65, 93, 0.82);
+  }
+
   .title div {
     order: 1;
   }
