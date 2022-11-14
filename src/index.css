@@ -136,7 +136,7 @@ ul {
   color: #5876c5;
 }
 
-.pagination .css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon {
+.pagination svg {
   font-size: 2rem;
 }
 
@@ -164,15 +164,15 @@ ul {
     padding-left: 20px;
   }
 
-  .pagination ul li:first-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  .pagination ul li:first-child a {
     margin-left: 0;
   }
 
-  .pagination ul li:last-child .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  .pagination ul li:last-child a {
     margin-right: 0;
   }
 
-  .pagination .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  .pagination a {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 1.33333px;
