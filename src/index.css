@@ -156,7 +156,7 @@ ul {
 
   .pagination ul li:first-child {
     margin-right: 42px;
-    padding-right: 26px;
+    padding-right: 30px;
   }
 
   .pagination ul li:last-child {
@@ -177,7 +177,7 @@ ul {
     line-height: 19px;
     letter-spacing: 1.33333px;
     padding: 20px 12px;
-    margin: 0 6px;
+    margin: 0 3px;
   }
 
   .container-detail-job {
