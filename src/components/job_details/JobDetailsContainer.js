@@ -12,8 +12,6 @@ import TitleCard from '../../UI/TitleCard';
 const JobDetailsContainer = (props) => {
   const location = useLocation();
 
-  console.log(props.dataJob)
-
   return (
     <section className="container-detail-job">
       <div className={classes.in_container_job}>

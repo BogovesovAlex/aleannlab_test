@@ -14,7 +14,6 @@ const JobDetails = (props) => {
   const salary = props.salary.split('k').slice(0, 2).join('').split('-')
 
   const postedDate = getModifiedDate(props.postedDate);
-  console.log(postedDate)
 
   return (
     <Fragment>

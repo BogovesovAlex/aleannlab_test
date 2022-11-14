@@ -5,7 +5,6 @@ import JobItem from './JobItem';
 import classes from './JobsList.module.css';
 
 const JobsList = (props) => {
-  console.log(props.jobs)
   return (
     <Fragment>
       <ul className={classes.list}>
