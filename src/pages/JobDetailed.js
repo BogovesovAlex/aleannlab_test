@@ -12,7 +12,7 @@ import LoadingSpinner from "../UI/LoadingSpinner";
 
 const API_KEY = process.env.React_App_GOOGLE_MAPS_API_KEY;
 
-const JobDetailed = () => {
+const JobDetailed = (props) => {
   const params = useParams();
 
   const { jobsId } = params;
@@ -26,7 +26,9 @@ const JobDetailed = () => {
 
   useEffect(() => {
     sendRequest(jobsId);
-  }, [sendRequest, jobsId]);
+
+    props.onPageId(jobsId);
+  }, [sendRequest, jobsId, props]);
 
   if (status === 'pending') {
     return (

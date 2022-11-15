@@ -1,7 +1,13 @@
 .container {
   height: 100vh;
   display: flex;
+  background: #F5F5F5;
 }
+
+.container_details {
+  background:#FFFFFF;
+}
+
 
 .main {
   margin: 0 auto;
