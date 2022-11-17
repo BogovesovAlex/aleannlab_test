@@ -10,24 +10,24 @@ import { ReactComponent as Marker } from '../../icons/Location.svg';
 
 import Map from '../map/Map';
 
-const JobDetailsContainer = (props) => {
+const JobDetailsContainer = ({ dataJob }) => {
   const location = useLocation();
 
   return (
     <section className="container-detail-job">
       <div className={classes.in_container_job}>
         <JobDetails
-          title={props.dataJob.title}
-          salary={props.dataJob.salary}
-          postedDate={props.dataJob.updatedAt}
-          description={props.dataJob.description}
+          title={dataJob.title}
+          salary={dataJob.salary}
+          postedDate={dataJob.updatedAt}
+          description={dataJob.description}
         />
         <div className={classes.info_and_image}>
           <AdditionalInfo
-            employments={props.dataJob.employment_type}
-            benefits={props.dataJob.benefits}
+            employments={dataJob.employment_type}
+            benefits={dataJob.benefits}
           />
-          <AttachedImage images={props.dataJob.pictures} />
+          <AttachedImage images={dataJob.pictures} />
         </div>
         <Link className={classes.btn_back} to={`${location.pathname.split("/").slice(0, 3).join('/')}`}>
           RETURN TO JOB BOARD
@@ -37,11 +37,11 @@ const JobDetailsContainer = (props) => {
         <TitleCard><h1>Contacts</h1></TitleCard>
         <div className={classes.contacts}>
           <div >
-            <p>Department name. <br />{props.dataJob.name}</p>
-            <p><span>{<Marker />}</span>{props.dataJob.address}</p>
-            <p>{props.dataJob.phone} <br />{props.dataJob.email}</p>
+            <p>Department name. <br />{dataJob.name}</p>
+            <p><span>{<Marker />}</span>{dataJob.address}</p>
+            <p>{dataJob.phone} <br />{dataJob.email}</p>
           </div>
-          <Map centerPoint={props.dataJob.location} />
+          <Map centerPoint={dataJob.location} />
         </div>
       </div>
     </section>
