@@ -13,7 +13,7 @@ function App() {
   return (
     <Layout pageId={pageId}>
       <Routes>
-        <Route path='/' element={<Navigate to={`/job-board/page=${':page' ? 1 : ':page'}`} />} />
+        <Route path='/' element={<Navigate to={'/job-board/page=1'} />} />
         <Route path='/job-board/page=:page' element={<JobBoard />} />
         <Route path='/job-board/page=:page/:jobsId' element={<JobDetailed onPageId={getPageId}/>} />
       </Routes>
